@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Most_popular_twitch_streams/static/css/main.c8d6e179.chunk.css",
+    "main.js": "/Most_popular_twitch_streams/static/js/main.0d5c33fd.chunk.js",
+    "main.js.map": "/Most_popular_twitch_streams/static/js/main.0d5c33fd.chunk.js.map",
+    "runtime-main.js": "/Most_popular_twitch_streams/static/js/runtime-main.2b104fcb.js",
+    "runtime-main.js.map": "/Most_popular_twitch_streams/static/js/runtime-main.2b104fcb.js.map",
+    "static/js/2.dfc2de87.chunk.js": "/Most_popular_twitch_streams/static/js/2.dfc2de87.chunk.js",
+    "static/js/2.dfc2de87.chunk.js.map": "/Most_popular_twitch_streams/static/js/2.dfc2de87.chunk.js.map",
+    "index.html": "/Most_popular_twitch_streams/index.html",
+    "static/css/main.c8d6e179.chunk.css.map": "/Most_popular_twitch_streams/static/css/main.c8d6e179.chunk.css.map",
+    "static/js/2.dfc2de87.chunk.js.LICENSE.txt": "/Most_popular_twitch_streams/static/js/2.dfc2de87.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b104fcb.js",
+    "static/js/2.dfc2de87.chunk.js",
+    "static/css/main.c8d6e179.chunk.css",
+    "static/js/main.0d5c33fd.chunk.js"
+  ]
+}
