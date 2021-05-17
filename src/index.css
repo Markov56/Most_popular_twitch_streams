@@ -21,6 +21,10 @@ code {
     monospace;
 }
 
+.main {
+ padding: 20px;
+}
+
 .streams-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -9,10 +9,11 @@ const Streams = (props) => {
     if(!streams) {
        return  <div>Wait for..</div>
     } else { 
-        return (            
+        return (   
+            <main className='main'>         
             <div className='streams-list'>
                 {streams.map(stream => (
-                    <div className='stream-container'>
+                    <div className='stream-container' key={stream.user_name}>
                     
                         <img src={
                             stream.thumbnail_url
@@ -26,6 +27,7 @@ const Streams = (props) => {
                     </div>
                 ))}
              </div> 
+             </main>
         )
     }
     }

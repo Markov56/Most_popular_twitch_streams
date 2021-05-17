@@ -1,3 +1,5 @@
+import { getStreams, getToken } from '../api/api'
+
 export const SET_TOKEN = 'SET_TOKEN';
 export const SET_STREAMS = 'SET_STREAMS';
 
@@ -34,3 +36,26 @@ export const setStreams = (streams) => ({
     type: SET_STREAMS,
     streams
 })
+
+export const setStreamsThunk = (token, clientId) =>  (dispatch) => {
+    getStreams(token, clientId)
+        .then(response => response.data.data)
+        .then(streams => {
+            dispatch(setStreams(streams))
+        })                             
+    
+};
+
+export const getTokenAndStreamsThunk = (clientId, clientSecret) => (dispatch) => {
+    getToken(clientId, clientSecret)
+    .then(response => response.data.access_token)
+    .then(token => {
+        dispatch(setToken(token))
+
+        getStreams(token, clientId)
+        .then(response =>response.data.data)
+        .then(streams => {
+            dispatch(setStreams(streams))
+        })
+    })
+}
